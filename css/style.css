@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'GraphikLCWeb-Medium';
+    src: url('../fonts/GraphikLCWeb-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GraphikLCWeb-Medium.woff') format('woff'),
+    url('../fonts/GraphikLCWeb-Medium.ttf')  format('truetype'),
+    url('../fonts/GraphikLCWeb-Medium.svg#GraphikLCWeb-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN2014Web-NarrowDemi';
+    src: url('../fonts/DIN2014Web-NarrowDemi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DIN2014Web-NarrowDemi.woff') format('woff'),
+    url('../fonts/DIN2014Web-NarrowDemi.ttf')  format('truetype'),
+    url('../fonts/DIN2014Web-NarrowDemi.svg#DIN2014Web-NarrowDemi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'GraphikLCWeb-Medium', sans-serif;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+.title {
+    font: 42px/1.3em 'DIN2014Web-NarrowDemi';
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* Баннер вверху страницы */
+.splash {
+    background: radial-gradient(66.01% 117.37% at 58.04% 62.5%, #D10032 13.62%, #BF0A33 48.65%, #B6032D 67.2%);
+    height: 400px;
+    position: relative;
+}
+.splash__inner {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.splash__main-lightning {
+    width: 941px;
+    height: 462px;
+    position: absolute;
+    top: -30px;
+    right: 3%;
+    opacity: 0.1;
+}
+.splash .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.splash__title {
+    font: 52px/1.1em 'DIN2014Web-NarrowDemi';
+    text-transform: uppercase;
+    color: #fff;
+    width: 40%;
+    transform: translateY(-12%);
+}
+.splash__img {
+    transform: translateY(20px);
+}
+/* Белые молнии */
+.splash__lightning {
+    width: 72px;
+    height: 36px;
+    position: absolute;
+    fill: #fff;
+    opacity: 0.08;
+}
+.splash__lightning:nth-child(3),
+.splash__lightning:nth-child(6),
+.splash__lightning:nth-child(7),
+.splash__lightning:nth-child(10),
+.splash__lightning:nth-child(11),
+.splash__lightning:nth-child(12) {
+    width: 46px;
+    height: 23px;
+}
+.splash__lightning:nth-child(5),
+.splash__lightning:nth-child(8),
+.splash__lightning:nth-child(11),
+.splash__lightning:nth-child(12),
+.splash__lightning:nth-child(13) {
+    opacity: 0.2;
+}
+.splash__lightning:nth-child(1) {
+    top: 22%;
+    left: 10%;
+}
+.splash__lightning:nth-child(2) {
+    top: 40%;
+    left: 5%;
+}
+.splash__lightning:nth-child(3) {
+    top: 60%;
+    left: 10%;
+}
+.splash__lightning:nth-child(4) {
+    top: 70%;
+    left: 22%;
+    width: 64px;
+    height: 32px;
+}
+.splash__lightning:nth-child(5) {
+    top: 80%;
+    left: 30%;
+}
+.splash__lightning:nth-child(6) {
+    top: 70%;
+    left: 40%;
+}
+.splash__lightning:nth-child(7) {
+    top: 60%;
+    left: 45%;
+}
+.splash__lightning:nth-child(8) {
+    top: 70%;
+    left: 50%;
+}
+.splash__lightning:nth-child(9) {
+    top: 40%;
+    left: 50%;
+}
+.splash__lightning:nth-child(10) {
+    top: 70%;
+    right: 5%;
+}
+.splash__lightning:nth-child(11) {
+    top: 25%;
+    right: 10%;
+}
+.splash__lightning:nth-child(12) {
+    top: 45%;
+    right: 15%;
+}
+.splash__lightning:nth-child(13) {
+    top: 25%;
+    right: 20%;
+}
+.splash__lightning:nth-child(14) {
+    top: 65%;
+    right: 15%;
+}
+/* Текстовой блок под главным баннером */
+.intro {
+    font-size: 18px;
+    line-height: 1.8em;
+    color: #262626;
+    text-align: center;
+    padding: 80px 20px;
+}
+/* Блок преимуществ */
+.advantages {
+    background: #FBC238;
+    padding: 80px 20px 85px;
+    text-align: center;
+    color: #262626;
+    font-size: 16px;
+}
+.advantages .container {
+    max-width: 1000px;
+}
+.advantages__icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 auto 15px;
+}
+.advantages__icon img {
+    transform: translateY(-5%);
+}
+.advantages__items {
+    display: flex;
+    justify-content: space-between;
+}
+/* Блок доставки */
+.delivery {
+    padding: 80px 20px;
+    text-align: center;
+}
+.delivery .container {
+    max-width: 850px;
+}
+.delivery__blocks {
+    display: flex;
+}
+.delivery__item {
+    width: 48%;
+    padding: 0 2%;
+    font-size: 18px;
+    line-height: 1.4em;
+    color: #434343;
+}
+.delivery__item-link {
+    color: #434343;
+}
+.delivery__item-link:hover {
+    text-decoration: none;
+}
+.delivery__icon {
+    position: relative;
+    width: 193px;
+    margin: 0 auto 15px;
+}
+.delivery__lightning {
+    width: 100%;
+    height: 90px;
+    fill: #eee;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-91px) translateY(-20px);
+    opacity: 0.6;
+    z-index: -1;
+}
+.delivery__description {
+    color: #828282;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-top: 40px;
+}
+
+@media (max-width: 1240px) {
+    .container {
+        width: 940px;
+    }
+}
+@media (max-width: 999px) {
+    .container {
+        width: 760px;
+    }
+    .splash {
+        height: 280px;
+    }
+    .splash .container {
+        display: block;
+        text-align: center;
+    }
+    .splash__main-lightning {
+        width: 473px;
+        height: 221px;
+        top: auto;
+        bottom: -30px;
+        right: 50%;
+        transform: translateX(236px);
+    }
+    .splash__title {
+        font-size: 30px;
+        width: auto;
+        transform: none;
+        padding-top: 30px;
+    }
+    .splash__img {
+        width: 230px;
+    }
+    .splash__lightning {
+        width: 24px;
+        height: 12px;
+    }
+    .intro {
+        font-size: 16px;
+        padding: 100px 20px 80px;
+        text-align: left;
+    }
+    .advantages {
+        padding: 50px 20px 25px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .advantages__items {
+        display: block;
+    }
+    .advantages__item {
+        margin-bottom: 30px;
+    }
+    .delivery {
+        padding: 60px 20px 30px;
+    }
+    .delivery__blocks {
+        display: block;
+    }
+    .delivery__item {
+        width: auto;
+        padding: 0 0 50px;
+        font-size: 16px;
+    }
+    .delivery__description {
+        text-align: left;
+    }
+}
+@media (max-width: 760px) {
+    .container {
+        width: 100%;
+    }
+}
